@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: hidden;
+  background-color: rgba(255, 0, 98, 0.178);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.left {
+  color: cornflowerblue;
+  font-weight: 900;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header>nav>.right>ul>a {
+  cursor: pointer;
+  transition: all 0.5s;
+  color: black;
+  text-decoration: none;
+}
+
+header>nav>.right>ul>a:hover {
+  color: cornflowerblue;
+}
+
+.mbi {
+  background-image: url('https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+  height: 50rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header,
+main {
+  margin: 1rem;
+}
+
+
+.mbt {
+  padding: 1rem;
+  border: 3px solid cornflowerblue;
+  position: absolute;
+  top: 70%;
+  margin: 0;
+  left: 15%;
+  width: 30rem;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color-scheme: cornflowerblue, white, black, gray;
+}
+
+.mbt>h1 {
+  font-size: 30px;
+}
+
+.mbt>span {
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 10%;
+}
+
+footer>nav>ul>a,
+a:last-of-type {
+  color: white;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+a:last-of-type:hover,
+footer>nav>ul>a:hover {
+  color: cornflowerblue;
+}
+
+.merit {
+  display: flex;
+  justify-content: center;
+}
+
+footer>div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mbt {
+    position: relative;
+    left: 0;
+    width: 35rem;
+    height: 10rem;
+    background-color: gray;
+    border: 0px;
+    margin-bottom: 10rem;
+  }
+
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  footer>div>ul,
+  footer>nav>ul,
+  .merit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
